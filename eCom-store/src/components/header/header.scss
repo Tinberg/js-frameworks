@@ -1,0 +1,11 @@
+@import '../../styles/global';
+
+.navbar-custom .nav-link-custom,
+.navbar-custom a {
+    color: $font-color;
+    
+    &:hover {
+      color: $secondary; // Change color on hover
+      text-decoration: underline;
+    }
+  }

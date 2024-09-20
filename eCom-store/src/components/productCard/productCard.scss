@@ -1,0 +1,18 @@
+.product-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  
+  .image-container {
+    height: 350px;
+  }
+
+  .card-body {
+    flex-grow: 1;
+  }
+  
+  .product-description {
+    text-overflow: ellipsis;  
+  }
+  
