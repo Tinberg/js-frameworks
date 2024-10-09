@@ -20,7 +20,6 @@ function Cart() {
       <Container>
         <h1>Your Cart</h1>
         <Row>
-          {/* Loop through the items and display them using ProductCard component */}
           {cartItems.map((item) => (
             <Col key={item.id} xs={12} sm={6} md={4} className="my-4">
               <ProductCard
@@ -39,7 +38,6 @@ function Cart() {
           ))}
         </Row>
 
-        {/* Display total price */}
         <div>
           <Button className="my-4" variant="danger" onClick={clearCart}>
             Remove all items
@@ -48,14 +46,8 @@ function Cart() {
         <div className="my-3 mb-4">
           <h3>Total: {totalPrice.toFixed(2)} NOK</h3>
         </div>
-
-        {/* Checkout button */}
         <Link to="/checkout-success">
-          <Button
-            className="w-100"
-            variant="success"
-            onClick={clearCart}
-          >
+          <Button className="w-100" variant="success" onClick={clearCart}>
             Proceed to Checkout
           </Button>
         </Link>

@@ -5,7 +5,6 @@ import confetti from "canvas-confetti";
 
 function CheckoutSuccess() {
   useEffect(() => {
-    // Trigger confetti when the component mounts
     confetti({
       particleCount: 100,
       spread: 160,

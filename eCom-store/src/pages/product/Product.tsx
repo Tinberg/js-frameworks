@@ -74,7 +74,6 @@ function Product() {
       <Container className="py-5">
         <Row>
           <Col md={6}>
-            {/* product with all info from component */}
             <ProductCard
               product={product}
               originalPrice={product.price}
