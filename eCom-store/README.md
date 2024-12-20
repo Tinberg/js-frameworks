@@ -1,55 +1,134 @@
-# React + TypeScript + Vite
+# JS Frameworks Project: E-Commerce Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to the E-Commerce Website, a simple yet functional online shopping platform developed as part of the JS Frameworks coursework. This project focuses on utilizing React, TypeScript, Vite, and Bootstrap to create a modern and efficient web application.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Home Page
+The Home Page provides an overview of featured products and a search bar to help users find what they need quickly.
 
-## Expanding the ESLint configuration
+### Products Page
+The Products Page displays all available products with sorting and filtering options for better navigation. Each product is displayed with a detailed image, price, and description.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### Product Details Page
+A dedicated page for each product that showcases detailed information, including images, specifications, and customer reviews.
 
-- Configure the top-level `parserOptions` property like this:
+### Shopping Cart
+The Shopping Cart allows users to manage the items they wish to purchase. Users can adjust quantities, remove items, and proceed to checkout.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+### Contact Page
+The Contact Page provides users with a form to reach out for support or inquiries.
+
+## Built With
+
+- **React**: A JavaScript library for building user interfaces
+- **TypeScript**: A typed superset of JavaScript
+- **Vite**: A fast build tool and development server
+- **Bootstrap**: A CSS framework for responsive design
+
+## Getting Started
+
+### Prerequisites
+Ensure you have the following installed on your system:
+
+- Node.js
+- npm (Node Package Manager)
+
+To check if they are installed, run the following commands in your terminal:
+
+```bash
+node -v
+npm -v
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+### Installing
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+1. Clone the repository:
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+   ```bash
+   git clone github.com/Tinberg/JS-Frameworks-Project
+   ```
+
+2. Navigate to the project directory:
+
+   ```bash
+   cd JS-Frameworks-Project
+   ```
+
+3. Install the dependencies:
+
+   ```bash
+   npm install
+   ```
+
+### Development
+To start the development server with hot module reloading, run:
+
+```bash
+npm run dev
 ```
 
-## assigment info: 
+### Build
+To create an optimized production build, run:
 
-This assignment is designed to meet the specified criteria. Please note that storing data in state without the use of localStorage, as well as additional features that a website would typically benefit from, have been excluded to prioritize time spent working with React and TypeScript. UX and UI have also been de-emphasized!
+```bash
+npm run build
+```
+
+### Custom Styles
+You can customize the application's styles by importing SCSS files in your JavaScript modules. For example:
+
+```javascript
+import "../../scss/products.scss";
+```
+
+## ESLint Configuration
+The project includes an ESLint setup tailored for TypeScript and React. For advanced type-aware linting, you can expand the configuration:
+
+1. Update the `parserOptions` in the top-level configuration:
+
+   ```javascript
+   export default tseslint.config({
+     languageOptions: {
+       parserOptions: {
+         project: ['./tsconfig.node.json', './tsconfig.app.json'],
+         tsconfigRootDir: import.meta.dirname,
+       },
+     },
+   });
+   ```
+
+2. Replace `tseslint.configs.recommended` with `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`.
+
+3. Install the `eslint-plugin-react` package:
+
+   ```bash
+   npm install eslint-plugin-react --save-dev
+   ```
+
+4. Update the ESLint configuration to include the React plugin:
+
+   ```javascript
+   import react from 'eslint-plugin-react';
+
+   export default tseslint.config({
+     settings: { react: { version: '18.3' } },
+     plugins: {
+       react,
+     },
+     rules: {
+       ...react.configs.recommended.rules,
+       ...react.configs['jsx-runtime'].rules,
+     },
+   });
+   ```
+
+## Assignment Info
+This assignment is designed to fulfill the coursework requirements by demonstrating proficiency in React and TypeScript. Note that state management does not include localStorage, and additional UX/UI features have been deprioritized to focus on core functionalities.
+
+## Repository
+[GitHub Repository](https://github.com/users/Tinberg/projects/5)
+
+---
+Thank you for exploring this project!
 
