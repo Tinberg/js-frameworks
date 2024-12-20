@@ -50,7 +50,7 @@ npm -v
 2. Navigate to the project directory:
 
    ```bash
-   cd JS-frameworks
+   cd eCom-store
    ```
 
 3. Install the dependencies:
