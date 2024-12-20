@@ -46,13 +46,13 @@ npm -v
 1. Clone the repository:
 
    ```bash
-   git clone github.com/Tinberg/JS-Frameworks-Project
+   git clone github.com/Tinberg/JS-frameworks
    ```
 
 2. Navigate to the project directory:
 
    ```bash
-   cd JS-Frameworks-Project
+   cd JS-frameworks
    ```
 
 3. Install the dependencies:
